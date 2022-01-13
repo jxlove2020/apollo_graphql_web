@@ -39,3 +39,33 @@ npm i convert-csv-to-json
 ```bash
 npm i apollo-server
 ```
+
+# npm run start 로 apollo 서버 에서 쿼리 실행
+
+http://localhost:4000 번 클릭하여
+apollographql 실행 창이 열립니다.
+실행창에 다음과 같이 적고 `run` 버튼을 눌러주면 실행이 됩니다.
+
+```
+query {
+  teams {
+    id
+    manager
+    project
+    supplies {
+      id
+    }
+  }
+  supplies {
+    id
+  }
+  team(id: 3) {
+    office
+    extension_number
+  }
+  equipments {
+    used_by
+    count
+  }
+}
+```
