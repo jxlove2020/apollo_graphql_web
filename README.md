@@ -33,3 +33,9 @@ Edit csv
 ```bash
 npm i convert-csv-to-json
 ```
+
+# apollo 서버 설치
+
+```bash
+npm i apollo-server
+```
