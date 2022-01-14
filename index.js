@@ -83,7 +83,7 @@ const resolvers = {
       const deleted = database.equipments.filter(equipment => {
         return equipment.id === args.id;
       })[0];
-      database.equpments = database.equipments.filter(equipment => {
+      database.equipments = database.equipments.filter(equipment => {
         return equipment.id !== args.id;
       });
       return deleted;
