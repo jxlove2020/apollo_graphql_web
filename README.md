@@ -46,6 +46,8 @@ http://localhost:4000 번 클릭하여
 apollographql 실행 창이 열립니다.
 실행창에 다음과 같이 적고 `run` 버튼을 눌러주면 실행이 됩니다.
 
+### 조회
+
 ```
 query {
   teams {
@@ -66,6 +68,19 @@ query {
   equipments {
     used_by
     count
+  }
+}
+```
+
+### 삭제
+
+```
+mutation {
+  deleteEquipment(id: "notebook") {
+    id
+    used_by
+    count
+    new_or_used
   }
 }
 ```
