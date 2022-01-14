@@ -84,3 +84,21 @@ mutation {
   }
 }
 ```
+
+### 추가
+
+```
+mutation {
+  insertEquipment (
+    id: "laptop",
+    used_by: "developer",
+    count: 17,
+    new_or_used: "new"
+  ) {
+    id
+    used_by
+    count
+    new_or_used
+  }
+}
+```
