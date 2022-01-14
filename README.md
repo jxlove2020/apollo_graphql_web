@@ -102,3 +102,30 @@ mutation {
   }
 }
 ```
+
+### 수정
+```
+mutation {
+  editEquipment (
+    id: "pen tablet",
+    new_or_used: "new",
+    count: 30,
+    used_by: "designer"
+  ) {
+    id
+    new_or_used
+    count
+    used_by
+  }
+}
+```
+
+type Mutation {
+    editEquipment(
+        id: String,
+        used_by: String,
+        count: Int,
+        new_or_used: String
+    ): Equipment
+    ...
+}
